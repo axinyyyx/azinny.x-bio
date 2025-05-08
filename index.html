@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Ensure UTF-8 encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔥 Bio Vault – azinny.x</title>
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #eaeaea;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff4747;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+    }
+
+    .category-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .category-btn {
+      background-color: #ff4747;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .category-btn:hover {
+      background-color: #e53e3e;
+    }
+
+    .bio-card {
+      background-color: #222;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 12px rgba(255, 71, 71, 0.2);
+    }
+
+    .bio-text {
+      font-size: 1.1em;
+      white-space: pre-wrap;
+      margin-bottom: 15px;
+    }
+
+    .caption {
+      font-size: 0.95em;
+      color: #bbb;
+      margin-bottom: 10px;
+    }
+
+    .prompt {
+      color: #bbb;
+      margin-bottom: 15px;
+      font-size: 0.95em;
+    }
+
+    button.copy-btn {
+      background-color: #ff4747;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    button.copy-btn:hover {
+      background-color: #e53e3e;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔥 Bio Vault – azinny.x</h1>
+
+  <div class="category-container">
+    <!-- Buttons for filtering categories -->
+    <button class="category-btn" onclick="filterCategory('Attitude')">Attitude</button>
+    <button class="category-btn" onclick="filterCategory('Sad')">Sad</button>
+    <button class="category-btn" onclick="filterCategory('Dark')">Dark</button>
+    <button class="category-btn" onclick="filterCategory('Motivational')">Motivational</button>
+  </div>
+
+  <div id="bios-container"></div>
+
+  <script>
+    let biosData = [];
+
+    fetch('bios.json')
+      .then(response => response.json())
+      .then(data => {
+        biosData = data.categories;
+        displayBios("Attitude"); // Default category to display
+      })
+      .catch(error => console.error('Error loading bios:', error));
+
+    function filterCategory(category) {
+      const categoryData = biosData.find(cat => cat.category === category);
+      displayBios(categoryData.category);
+    }
+
+    function displayBios(category) {
+      const biosContainer = document.getElementById('bios-container');
+      biosContainer.innerHTML = ""; // Clear the current content
+
+      const selectedCategory = biosData.find(cat => cat.category === category);
+      selectedCategory.bios.forEach((bio, index) => {
+        const bioCard = document.createElement('div');
+        bioCard.classList.add('bio-card');
+
+        bioCard.innerHTML = `
+          <div class="bio-text" id="bio${index}">${bio.bio}</div>
+          <div class="caption">📄 Caption: ${bio.caption}</div>
+          <div class="prompt">🖼️ Prompt: ${bio.prompt}</div>
+          <button class="copy-btn" onclick="copyText('bio${index}')">Copy</button>
+        `;
+        
+        biosContainer.appendChild(bioCard);
+      });
+    }
+
+    function copyText(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Bio copied to clipboard!");
+      });
+    }
+  </script>
+
+</body>
+</html>
