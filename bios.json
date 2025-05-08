@@ -4,19 +4,29 @@
         "category": "Attitude",
         "bios": [
           {
+            "bio": "👑 Rishabh | azinny.x\n📍against the crowd\n🖕 fake vibes only get blocked",
+            "prompt": "Lone figure walking against a moving crowd, bold and confident.",
+            "caption": "I don’t fit in. I stand out."
+          },
+          {
+            "bio": "🔥 I’m my own vibe\n📍No one compares\n🖤 Unapologetically me",
+            "prompt": "A figure standing on a rooftop, city lights glowing below, exuding confidence.",
+            "caption": "I don’t chase trends. I am the trend."
+          },
+          {
             "bio": "🖕 society | 🔒 private soul\n📍Earth, unfortunately\n💭 I don't follow rules. I rewrite them.",
             "prompt": "A dark, moody street at night with neon signs, one figure standing alone in a hoodie.",
             "caption": "Born to stand alone. Rules are for followers."
           },
           {
+            "bio": "⚡ Born to disrupt\n📍Vibes too loud\n🖤 I own the chaos",
+            "prompt": "A figure in a leather jacket, standing under a stormy sky with lightning.",
+            "caption": "Chaos is my kingdom."
+          },
+          {
             "bio": "not here to impress\n📍lost in my own world\n💀 built different",
             "prompt": "A person staring through a rainy window, deep in thought, grayscale tone.",
             "caption": "Not made to impress. Just made different."
-          },
-          {
-            "bio": "👑 Rishabh | azinny.x\n📍against the crowd\n🖕 fake vibes only get blocked",
-            "prompt": "Lone figure walking against a moving crowd, bold and confident.",
-            "caption": "I don’t fit in. I stand out."
           },
           {
             "bio": "🧠 Overthinking. 💔 Trusting less. 🔥 Caring less.",
@@ -32,6 +42,16 @@
             "bio": "💔 Heartbroken, but still standing\n📍Waiting for peace, not love\n⛓️ Trapped in my own thoughts",
             "prompt": "A person sitting alone on a bench, with a somber expression.",
             "caption": "A heart that's been broken, but never shattered."
+          },
+          {
+            "bio": "🌧️ Tears blend with rain\n📍Lost in my silence\n🖤 No one hears",
+            "prompt": "A figure standing under an umbrella in heavy rain, face hidden.",
+            "caption": "Some pain is silent, but it screams within."
+          },
+          {
+            "bio": "🖤 Fading into memories\n📍Echoes of what was\n💔 Heart in fragments",
+            "prompt": "A figure walking away in a foggy forest, silhouette barely visible.",
+            "caption": "Some losses leave scars that never heal."
           },
           {
             "bio": "🖤 Emotions in turmoil\n📍Eyes filled with memories\n💭 Overthinking every moment",
@@ -59,6 +79,16 @@
             "caption": "Comfort in the dark, warmth in my smile."
           },
           {
+            "bio": "🌑 I thrive in shadows\n📍No one knows my truth\n🖤 Secrets are my armor",
+            "prompt": "A figure cloaked in shadows, standing under a moonlit sky.",
+            "caption": "The dark hides my scars, but not my strength."
+          },
+          {
+            "bio": "🖤 I’m the whisper in the void\n📍No light reaches me\n💀 Fearless in the abyss",
+            "prompt": "A figure standing at the edge of a dark cliff, stars above.",
+            "caption": "I don’t fear the dark; I am the dark."
+          },
+          {
             "bio": "🧠 Deep thoughts, dark truths\n📍Invisible in real life\n💀 Trust is a weapon",
             "prompt": "A shadowy figure walking alone at night with deep, introspective thoughts.",
             "caption": "What you see is never the whole truth."
@@ -82,6 +112,16 @@
             "bio": "💣 Break through the noise\n📍Against all odds\n💪 Nothing stops me",
             "prompt": "A silhouette climbing a steep mountain, against a backdrop of a rising sun.",
             "caption": "Rise above, even when the world tries to pull you down."
+          },
+          {
+            "bio": "🌟 I’m my own spark\n📍No limits, only goals\n💥 Keep rising",
+            "prompt": "A figure standing on a cliff, arms raised, sunrise in the background.",
+            "caption": "The only limit is the one you set."
+          },
+          {
+            "bio": "⚡ Ignite your fire\n📍Dream big, work hard\n🔥 You are unstoppable",
+            "prompt": "A figure running through a field, with a fiery sunset behind.",
+            "caption": "Your dreams are worth the fight."
           },
           {
             "bio": "🔥 Stay focused\n📍No distractions\n💯 Always moving forward",
@@ -109,6 +149,16 @@
             "caption": "Eating is my cardio."
           },
           {
+            "bio": "😹 Wi-Fi weak, vibes strong\n📍Error 404: Motivation not found",
+            "prompt": "A person laughing at their phone, surrounded by snacks.",
+            "caption": "Life’s too short to take seriously."
+          },
+          {
+            "bio": "🤡 Professional overthinker\n📍Currently avoiding adulthood\n😴 Naps are my superpower",
+            "prompt": "A person lounging on a couch, surrounded by empty coffee cups.",
+            "caption": "Why adult when you can nap?"
+          },
+          {
             "bio": "👑 Not a morning person\n📍Will take naps instead of coffee",
             "prompt": "A person in pajamas, yawning while sitting on a couch.",
             "caption": "Morning? What’s that?"
@@ -132,6 +182,16 @@
             "bio": "💖 Love without expectations\n📍Hearts don't lie\n🌙 We are forever",
             "prompt": "A couple sitting under the stars, hand in hand.",
             "caption": "You + me = eternity."
+          },
+          {
+            "bio": "💞 My heart beats for you\n📍Lost in your eyes\n🌹 Love is my truth",
+            "prompt": "A close-up of two hands intertwined, with a soft sunset glow.",
+            "caption": "With you, I’m whole."
+          },
+          {
+            "bio": "💕 You’re my safe haven\n📍Love in every glance\n🌟 Forever yours",
+            "prompt": "A couple embracing under a glowing lantern-lit tree.",
+            "caption": "In your arms, I’m home."
           },
           {
             "bio": "💘 Waiting for the one who will understand\n📍Love beyond words",
@@ -159,6 +219,16 @@
             "caption": "When words fail, art speaks."
           },
           {
+            "bio": "✨ I create my own world\n📍Dreams in every stroke\n🖌️ Reality is my canvas",
+            "prompt": "A figure sketching under a starry sky, surrounded by glowing art.",
+            "caption": "My art, my universe."
+          },
+          {
+            "bio": "🖼️ Crafting stories in silence\n📍Every moment is art\n🌟 I’m the masterpiece",
+            "prompt": "A person arranging Polaroids on a wall, with soft lighting.",
+            "caption": "Life is my gallery."
+          },
+          {
             "bio": "🖋️ Writing is my escape\n📍Lost in stories\n📚 Reality can wait",
             "prompt": "A figure sitting in a cozy corner, surrounded by books.",
             "caption": "In words, I find my freedom."
@@ -174,7 +244,186 @@
             "caption": "Every picture tells a story."
           }
         ]
+      },
+      {
+        "category": "Aesthetic",
+        "bios": [
+          {
+            "bio": "🌸 Petals and dreams\n📍Chasing soft sunsets\n✨ Living in pastel hues",
+            "prompt": "A figure surrounded by cherry blossoms, bathed in golden hour light.",
+            "caption": "Life is art when you live in beauty."
+          },
+          {
+            "bio": "🌙 Moonlit vibes only\n📍Lost in neon glow\n🖤 Aesthetic soul",
+            "prompt": "A person standing under neon signs at night, with a dreamy expression.",
+            "caption": "My soul speaks in colors and light."
+          },
+          {
+            "bio": "🌿 Soft whispers of nature\n📍Bathed in golden light\n✨ Ethereal vibes",
+            "prompt": "A figure in a flowy dress, standing in a sunlit meadow.",
+            "caption": "I’m a poem written in light."
+          },
+          {
+            "bio": "✨ Glitter in my veins\n📍Soft vibes, bold dreams\n🌟 Living for the aesthetic",
+            "prompt": "A figure in a sparkly outfit, standing in a dreamy, pastel-colored room.",
+            "caption": "I don’t live for trends. I live for vibes."
+          }
+        ]
+      },
+      {
+        "category": "Chill",
+        "bios": [
+          {
+            "bio": "🌊 Waves and good vibes\n📍Chasing sunsets\n😎 Life’s too short to stress",
+            "prompt": "A person lounging by the beach, watching the sunset.",
+            "caption": "Just vibe and let the world fade away."
+          },
+          {
+            "bio": "☕ Coffee and calm\n📍No rush, just flow\n🖤 Keep it mellow",
+            "prompt": "A figure sipping coffee in a cozy café, with soft lighting.",
+            "caption": "Life’s better when you take it slow."
+          },
+          {
+            "bio": "🌴 Sunkissed and stress-free\n📍Living for the moment\n😴 Chill mode on",
+            "prompt": "A person relaxing in a hammock, with palm trees in the background.",
+            "caption": "Why stress when you can just chill?"
+          },
+          {
+            "bio": "🎧 Tunes and tranquility\n📍Lost in my playlist\n🌴 Vibes on repeat",
+            "prompt": "A person with headphones, sitting under a palm tree.",
+            "caption": "My playlist is my escape."
+          }
+        ]
+      },
+      {
+        "category": "Rebel",
+        "bios": [
+          {
+            "bio": "🔥 I break the mold\n📍Rules don’t own me\n🖤 Rebel with a cause",
+            "prompt": "A figure spray-painting a wall in a dark alley, with bold colors.",
+            "caption": "I don’t follow. I create."
+          },
+          {
+            "bio": "⚡ Chaos is my canvas\n📍No chains, just vibes\n🖕 Born to defy",
+            "prompt": "A person standing on a rooftop, city skyline in the background, fearless.",
+            "caption": "I’m the storm they didn’t see coming."
+          },
+          {
+            "bio": "🖤 Outlaw by choice\n📍No regrets, just lessons\n🔥 I write my own rules",
+            "prompt": "A figure standing in front of a neon-lit graffiti wall, defiant.",
+            "caption": "Rules are for those who follow."
+          },
+          {
+            "bio": "🖤 No apologies, no regrets\n📍Living my truth\n🔥 Rebel heart",
+            "prompt": "A figure riding a motorcycle through a desert, dust trailing behind.",
+            "caption": "I live for me, not for them."
+          }
+        ]
+      },
+      {
+        "category": "Dreamy",
+        "bios": [
+          {
+            "bio": "🌌 Stargazing soul\n📍Lost in cosmic dreams\n✨ Universe in my heart",
+            "prompt": "A figure lying on a hill, staring at a starry sky.",
+            "caption": "My dreams are bigger than the universe."
+          },
+          {
+            "bio": "🦋 Chasing fleeting moments\n📍Drifting through clouds\n🌙 Dreamer by nature",
+            "prompt": "A person walking through a field of flowers, with a dreamy sky above.",
+            "caption": "I live where dreams and reality blur."
+          },
+          {
+            "bio": "🌠 Woven from moonlight\n📍Dancing in my dreams\n🖤 Soul of a wanderer",
+            "prompt": "A figure standing in a glowing forest, surrounded by fireflies.",
+            "caption": "I’m made of dreams and starlight."
+          },
+          {
+            "bio": "🌟 Woven from starlight\n📍Dancing in my dreams\n🖤 Forever a wanderer",
+            "prompt": "A figure twirling in a glowing forest, surrounded by fireflies.",
+            "caption": "My soul dances with the stars."
+          }
+        ]
+      },
+      {
+        "category": "Vibes",
+        "bios": [
+          {
+            "bio": "🌈 Radiating good energy\n📍Vibes speak louder\n✨ Live for the moment",
+            "prompt": "A figure dancing under colorful festival lights, carefree.",
+            "caption": "My vibe is my superpower."
+          },
+          {
+            "bio": "🎉 Life’s a party\n📍Spreading good vibes\n🖤 Keep it real",
+            "prompt": "A person laughing with friends under string lights at night.",
+            "caption": "Good vibes only, always."
+          },
+          {
+            "bio": "🌟 High on life\n📍Vibes over everything\n😎 Stay true",
+            "prompt": "A figure standing on a rooftop, city lights sparkling below.",
+            "caption": "I don’t chase vibes. I create them."
+          }
+        ]
+      },
+      {
+        "category": "Mystic",
+        "bios": [
+          {
+            "bio": "🌙 Child of the cosmos\n📍Guided by stars\n🖤 Magic in my soul",
+            "prompt": "A figure in a cloak, standing in a misty forest with glowing runes.",
+            "caption": "I’m woven from stardust and secrets."
+          },
+          {
+            "bio": "🕯️ Keeper of ancient truths\n📍Lost in the unknown\n✨ Mystic at heart",
+            "prompt": "A person holding a glowing orb in a candlelit room.",
+            "caption": "The universe whispers, and I listen."
+          },
+          {
+            "bio": "🌌 I see beyond the veil\n📍Dancing with shadows\n🖤 Soul of the night",
+            "prompt": "A figure standing under a starry sky, with auroras above.",
+            "caption": "My soul speaks to the stars."
+          }
+        ]
+      },
+      {
+        "category": "Bold",
+        "bios": [
+          {
+            "bio": "🔥 Fearless by design\n📍No limits, just vibes\n🖤 Born to shine",
+            "prompt": "A figure standing on a stage, spotlight shining, exuding confidence.",
+            "caption": "I don’t wait for chances. I take them."
+          },
+          {
+            "bio": "⚡ I’m the spark\n📍Breaking every boundary\n🌟 Too bold to blend",
+            "prompt": "A person standing in front of a neon sign, radiating energy.",
+            "caption": "Boldness is my signature."
+          },
+          {
+            "bio": "🖤 I own the spotlight\n📍No fear, just fire\n🔥 Live loud",
+            "prompt": "A figure walking through a crowd, head held high, vibrant energy.",
+            "caption": "I was born to stand out."
+          }
+        ]
+      },
+      {
+        "category": "Wanderlust",
+        "bios": [
+          {
+            "bio": "🌍 Chasing horizons\n📍No destination, just vibes\n✨ Soul of a nomad",
+            "prompt": "A figure standing on a cliff, overlooking a vast ocean sunset.",
+            "caption": "The world is my home."
+          },
+          {
+            "bio": "🗺️ Roads call my name\n📍Lost in the journey\n🌟 Wanderer’s heart",
+            "prompt": "A person with a backpack, walking through a desert with mountains ahead.",
+            "caption": "Every step is a story."
+          },
+          {
+            "bio": "🌄 Born to roam\n📍Finding peace in the unknown\n🖤 Adventure awaits",
+            "prompt": "A figure camping under a starry sky, with a glowing campfire.",
+            "caption": "I find myself in the wild."
+          }
+        ]
       }
     ]
   }
-  
