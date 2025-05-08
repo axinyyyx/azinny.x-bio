@@ -65,6 +65,7 @@
             margin: 15px 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s;
+            position: relative;
         }
         .bio-card:hover {
             transform: translateY(-5px);
@@ -78,10 +79,12 @@
             font-weight: bold;
             color: #fff;
             font-size: 1.1em;
+            padding-right: 80px; /* Prevent text from touching the button */
         }
         .copy-btn {
-            display: block;
-            margin: 10px auto 0;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
             background: #ff4444;
             color: white;
             border: none;
@@ -90,7 +93,6 @@
             cursor: pointer;
             font-size: 0.9em;
             transition: background 0.3s;
-            text-align: center;
         }
         .copy-btn:hover {
             background: #cc3333;
@@ -118,9 +120,14 @@
             .bio-card {
                 padding: 15px;
             }
+            .bio-text {
+                padding-right: 60px; /* Adjusted for smaller screens */
+            }
             .copy-btn {
                 padding: 6px 12px;
                 font-size: 0.8em;
+                bottom: 10px;
+                right: 10px;
             }
         }
         @media (max-width: 480px) {
@@ -136,9 +143,14 @@
                 margin: 10px 0;
                 padding: 10px;
             }
+            .bio-text {
+                padding-right: 50px; /* Adjusted for smaller screens */
+            }
             .copy-btn {
                 padding: 5px 10px;
                 font-size: 0.7em;
+                bottom: 8px;
+                right: 8px;
             }
         }
     </style>
