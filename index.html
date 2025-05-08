@@ -6,8 +6,8 @@
     <title>🔥 Bio Vault – azinny.x</title>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
             color: #fff;
             margin: 0;
             padding: 20px;
@@ -22,10 +22,9 @@
             margin-bottom: 40px;
         }
         .header h1 {
-            font-size: 2.8em;
-            color: #ff4b4b;
-            text-shadow: 0 0 15px rgba(255, 75, 75, 0.7);
-            letter-spacing: 1px;
+            font-size: 2.5em;
+            color: #ff4444;
+            text-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
         }
         .category-selector {
             display: flex;
@@ -33,20 +32,19 @@
             margin-bottom: 30px;
         }
         .category-selector select {
-            background: linear-gradient(45deg, #ff4b4b, #ff7878);
+            background: #ff4444;
             border: none;
-            padding: 12px 24px;
-            border-radius: 25px;
+            padding: 10px 20px;
+            border-radius: 5px;
             color: white;
             font-size: 1em;
             cursor: pointer;
             outline: none;
-            transition: transform 0.3s, box-shadow 0.3s;
-            width: 220px;
+            transition: background 0.3s;
+            width: 200px;
         }
         .category-selector select:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 10px rgba(255, 75, 75, 0.5);
+            background: #cc3333;
         }
         .category {
             display: none;
@@ -55,111 +53,95 @@
             display: block;
         }
         .category h2 {
-            color: #ff4b4b;
-            border-bottom: 2px solid #ff4b4b;
+            color: #ff4444;
+            border-bottom: 2px solid #ff4444;
             padding-bottom: 10px;
-            font-size: 1.9em;
-            letter-spacing: 0.5px;
+            font-size: 1.8em;
         }
         .bio-card {
-            background: rgba(42, 42, 42, 0.9);
-            border-radius: 15px;
-            padding: 25px;
+            background: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
             margin: 15px 0;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-            transition: transform 0.3s, box-shadow 0.3s;
-            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
         }
         .bio-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 20px rgba(255, 75, 75, 0.2);
+            transform: translateY(-5px);
         }
         .bio-card p {
             margin: 8px 0;
-            color: #d1d1d1;
+            color: #ccc;
         }
         .bio-card .bio-text {
             white-space: pre-wrap;
-            font-weight: 600;
+            font-weight: bold;
             color: #fff;
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
         .copy-btn {
-            background: linear-gradient(45deg, #ff4b4b, #ff7878);
+            display: block;
+            margin: 10px auto 0;
+            background: #ff4444;
             color: white;
             border: none;
             padding: 8px 16px;
-            border-radius: 8px;
+            border-radius: 5px;
             cursor: pointer;
             font-size: 0.9em;
-            transition: background 0.3s, transform 0.2s;
-            position: absolute;
-            bottom: 15px;
-            right: 15px;
+            transition: background 0.3s;
+            text-align: center;
         }
         .copy-btn:hover {
-            background: linear-gradient(45deg, #cc3333, #ff4b4b);
-            transform: scale(1.1);
+            background: #cc3333;
         }
         .toast {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background: rgba(51, 51, 51, 0.9);
+            background: #333;
             color: white;
             padding: 10px 20px;
-            border-radius: 8px;
+            border-radius: 5px;
             display: none;
             z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         @media (max-width: 768px) {
             .header h1 {
-                font-size: 2.2em;
+                font-size: 2em;
             }
             .category-selector select {
-                padding: 10px 20px;
+                padding: 8px 15px;
                 font-size: 0.9em;
                 width: 180px;
             }
             .bio-card {
-                padding: 20px;
-            }
-            .bio-text {
-                font-size: 1.1em;
+                padding: 15px;
             }
             .copy-btn {
                 padding: 6px 12px;
                 font-size: 0.8em;
-                bottom: 10px;
-                right: 10px;
             }
         }
         @media (max-width: 480px) {
             .header h1 {
-                font-size: 1.8em;
+                font-size: 1.5em;
             }
             .category-selector select {
-                padding: 8px 16px;
+                padding: 6px 12px;
                 font-size: 0.8em;
                 width: 150px;
             }
             .bio-card {
                 margin: 10px 0;
-                padding: 15px;
-            }
-            .bio-text {
-                font-size: 1em;
+                padding: 10px;
             }
             .copy-btn {
                 padding: 5px 10px;
                 font-size: 0.7em;
-                bottom: 8px;
-                right: 8px;
             }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
