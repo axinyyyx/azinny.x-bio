@@ -1,340 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🔥 Bio Vault – azinny.x</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      background: linear-gradient(180deg, #0a0a0a, #1a1a1a);
-      color: #e0e0e0;
-      font-family: 'Poppins', sans-serif;
-      min-height: 100vh;
-      padding: 20px;
-      overflow-x: hidden;
-      position: relative;
-    }
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle, rgba(255, 62, 62, 0.1) 1%, transparent 2%);
-      opacity: 0.3;
-      z-index: -1;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2.8rem;
-      color: #ff3e3e;
-      text-shadow: 0 0 12px rgba(255, 62, 62, 0.6);
-      margin-bottom: 40px;
-      font-weight: 700;
-    }
-    #bios-container {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      margin-bottom: 120px;
-    }
-    .bio-card {
-      background: rgba(20, 20, 20, 0.9);
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 0 15px rgba(255, 62, 62, 0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    .bio-card.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .bio-card:hover {
-      transform: rotateX(4deg) rotateY(4deg);
-      box-shadow: 0 0 30px rgba(255, 62, 62, 0.5);
-    }
-    .bio-text {
-      font-size: 1.1rem;
-      white-space: pre-wrap;
-      margin-bottom: 15px;
-      color: #f0f0f0;
-      line-height: 1.5;
-    }
-    .caption, .prompt {
-      font-size: 0.85rem;
-      color: #b0b0b0;
-      margin-bottom: 10px;
-    }
-    .copy-btn {
-      background: linear-gradient(45deg, #ff3e3e, #ff6b6b);
-      color: #fff;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: transform 0.2s ease, box-shadow 0.3s ease;
-    }
-    .copy-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(255, 62, 62, 0.6);
-    }
-    .category-container {
-      position: sticky;
-      bottom: 20px;
-      background: rgba(30, 30, 30, 0.8);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 62, 62, 0.3);
-      border-radius: 12px;
-      padding: 15px;
-      box-shadow: 0 0 25px rgba(255, 62, 62, 0.4);
-      z-index: 10;
-      margin: 0 auto;
-      max-width: 1200px;
-      transition: transform 0.5s ease;
-    }
-    .category-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-    .category-btn {
-      background: linear-gradient(45deg, #2a2a2a, #3a3a3a);
-      border: 2px solid #ff6b6b;
-      color: #ff6b6b;
-      padding: 10px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 600;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-    .category-btn:hover {
-      background: linear-gradient(45deg, #ff3e3e, #ff6b6b);
-      color: #fff;
-      box-shadow: 0 0 15px rgba(255, 62, 62, 0.6);
-      transform: scale(1.05);
-    }
-    .dropdown-toggle {
-      display: none;
-      background: linear-gradient(45deg, #2a2a2a, #3a3a3a);
-      border: 2px solid #ff6b6b;
-      color: #ff6b6b;
-      padding: 12px 16px;
-      border-radius: 8px;
-      width: 100%;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      text-transform: capitalize;
-    }
-    .dropdown-toggle:hover {
-      background: linear-gradient(45deg, #ff3e3e, #ff6b6b);
-      color: #fff;
-      box-shadow: 0 0 15px rgba(255, 62, 62, 0.6);
-      transform: scale(1.03);
-    }
-    .dropdown-toggle .arrow {
-      transition: transform 0.3s ease;
-    }
-    .dropdown-toggle.open .arrow {
-      transform: rotate(180deg);
-    }
-    .dropdown-menu {
-      max-height: 0;
-      opacity: 0;
-      overflow-y: auto;
-      background: rgba(30, 30, 30, 0.9);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 62, 62, 0.2);
-      border-radius: 8px;
-      margin: 10px auto 0;
-      width: 100%;
-      max-width: 100%;
-      transition: max-height 0.4s ease, opacity 0.4s ease;
-    }
-    .dropdown-menu.open {
-      max-height: 400px;
-      opacity: 1;
-    }
-    .dropdown-btn {
-      display: block;
-      padding: 12px 16px;
-      color: #ff6b6b;
-      text-align: left;
-      border-bottom: 1px solid rgba(255, 62, 62, 0.2);
-      cursor: pointer;
-      transition: background 0.3s ease, color 0.3s ease;
-      font-weight: 500;
-      text-transform: capitalize;
-    }
-    .dropdown-btn:hover {
-      background: rgba(255, 62, 62, 0.3);
-      color: #fff;
-    }
-    .dropdown-btn:last-child {
-      border-bottom: none;
-    }
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2rem;
-      }
-      #bios-container {
-        grid-template-columns: 1fr;
-      }
-      .category-grid {
-        display: none;
-      }
-      .dropdown-toggle {
-        display: flex;
-      }
-      .category-container {
-        bottom: 10px;
-        padding: 10px;
-        max-width: 100%;
-      }
-      .dropdown-menu {
-        width: 100%;
-        max-width: 100%;
-        margin: 10px 0 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Bio Vault – azinny.x</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #ff4444;
+            text-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+        }
+        .category-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .category-btn {
+            background: #ff4444;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .category-btn:hover {
+            background: #cc3333;
+            transform: scale(1.05);
+        }
+        .category-btn.active {
+            background: #fff;
+            color: #ff4444;
+        }
+        .category {
+            display: none;
+        }
+        .category.active {
+            display: block;
+        }
+        .category h2 {
+            color: #ff4444;
+            border-bottom: 2px solid #ff4444;
+            padding-bottom: 10px;
+            font-size: 1.8em;
+        }
+        .bio-card {
+            background: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+            transition: transform 0.3s;
+        }
+        .bio-card:hover {
+            transform: translateY(-5px);
+        }
+        .bio-card p {
+            margin: 8px 0;
+            color: #ccc;
+        }
+        .bio-card .bio-text {
+            white-space: pre-wrap;
+            font-weight: bold;
+            color: #fff;
+            font-size: 1.1em;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+        .copy-btn:hover {
+            background: #cc3333;
+        }
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: none;
+            z-index: 1000;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .category-btn {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+            .bio-card {
+                padding: 15px;
+            }
+            .copy-btn {
+                padding: 6px 10px;
+                font-size: 0.8em;
+            }
+        }
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+            .category-btn {
+                padding: 6px 12px;
+                font-size: 0.8em;
+            }
+            .bio-card {
+                margin: 10px 0;
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>🔥 Bio Vault – azinny.x</h1>
-
-  <div id="bios-container"></div>
-
-  <div class="category-container" id="category-container">
-    <div class="category-grid">
-      <button class="category-btn" onclick="filterCategory('All')">All</button>
-      <button class="category-btn" onclick="filterCategory('Attitude')">Attitude</button>
-      <button class="category-btn" onclick="filterCategory('Sad')">Sad</button>
-      <button class="category-btn" onclick="filterCategory('Dark')">Dark</button>
-      <button class="category-btn" onclick="filterCategory('Motivational')">Motivational</button>
-      <button class="category-btn" onclick="filterCategory('Funny')">Funny</button>
-      <button class="category-btn" onclick="filterCategory('Love')">Love</button>
-      <button class="category-btn" onclick="filterCategory('Creative')">Creative</button>
-      <button class="category-btn" onclick="filterCategory('Aesthetic')">Aesthetic</button>
-      <button class="category-btn" onclick="filterCategory('Chill')">Chill</button>
-      <button class="category-btn" onclick="filterCategory('Rebel')">Rebel</button>
-      <button class="category-btn" onclick="filterCategory('Dreamy')">Dreamy</button>
-      <button class="category-btn" onclick="filterCategory('Vibes')">Vibes</button>
-      <button class="category-btn" onclick="filterCategory('Mystic')">Mystic</button>
-      <button class="category-btn" onclick="filterCategory('Bold')">Bold</button>
-      <button class="category-btn" onclick="filterCategory('Wanderlust')">Wanderlust</button>
-      <button class="category-btn" onclick="filterCategory('Glow')">Glow</button>
-      <button class="category-btn" onclick="filterCategory('Chaos')">Chaos</button>
-      <button class="category-btn" onclick="filterCategory('Serenity')">Serenity</button>
-      <button class="category-btn" onclick="filterCategory('Epic')">Epic</button>
+    <div class="container">
+        <div class="header">
+            <h1>🔥 Bio Vault – azinny.x</h1>
+        </div>
+        <div class="category-buttons" id="categoryButtons"></div>
+        <div id="categories"></div>
     </div>
-    <button class="dropdown-toggle" id="dropdown-toggle">
-      <span id="selected-category">Attitude</span>
-      <span class="arrow">▼</span>
-    </button>
-    <div class="dropdown-menu" id="dropdown-menu">
-      <button class="dropdown-btn" onclick="filterCategory('All')">All</button>
-      <button class="dropdown-btn" onclick="filterCategory('Attitude')">Attitude</button>
-      <button class="dropdown-btn" onclick="filterCategory('Sad')">Sad</button>
-      <button class="dropdown-btn" onclick="filterCategory('Dark')">Dark</button>
-      <button class="dropdown-btn" onclick="filterCategory('Motivational')">Motivational</button>
-      <button class="dropdown-btn" onclick="filterCategory('Funny')">Funny</button>
-      <button class="dropdown-btn" onclick="filterCategory('Love')">Love</button>
-      <button class="dropdown-btn" onclick="filterCategory('Creative')">Creative</button>
-      <button class="dropdown-btn" onclick="filterCategory('Aesthetic')">Aesthetic</button>
-      <button class="dropdown-btn" onclick="filterCategory('Chill')">Chill</button>
-      <button class="dropdown-btn" onclick="filterCategory('Rebel')">Rebel</button>
-      <button class="dropdown-btn" onclick="filterCategory('Dreamy')">Dreamy</button>
-      <button class="dropdown-btn" onclick="filterCategory('Vibes')">Vibes</button>
-      <button class="dropdown-btn" onclick="filterCategory('Mystic')">Mystic</button>
-      <button class="dropdown-btn" onclick="filterCategory('Bold')">Bold</button>
-      <button class="dropdown-btn" onclick="filterCategory('Wanderlust')">Wanderlust</button>
-      <button class="dropdown-btn" onclick="filterCategory('Glow')">Glow</button>
-      <button class="dropdown-btn" onclick="filterCategory('Chaos')">Chaos</button>
-      <button class="dropdown-btn" onclick="filterCategory('Serenity')">Serenity</button>
-      <button class="dropdown-btn" onclick="filterCategory('Epic')">Epic</button>
-    </div>
-  </div>
+    <div id="toast" class="toast">Copied to clipboard!</div>
 
-  <script>
-    let biosData = [];
+    <script>
+        // Fetch JSON data
+        fetch('bios.json')
+            .then(response => response.json())
+            .then(data => {
+                const categoriesContainer = document.getElementById('categories');
+                const categoryButtonsContainer = document.getElementById('categoryButtons');
 
-    fetch('bios.json')
-      .then(response => response.json())
-      .then(data => {
-        biosData = data.categories;
-        displayBios("Attitude"); // Default category
-      })
-      .catch(error => console.error('Error loading bios:', error));
+                // Create category buttons
+                data.categories.forEach((category, index) => {
+                    const button = document.createElement('button');
+                    button.className = 'category-btn';
+                    button.textContent = category.category;
+                    button.dataset.category = category.category;
+                    if (index === 0) button.classList.add('active');
+                    categoryButtonsContainer.appendChild(button);
+                });
 
-    function filterCategory(category) {
-      displayBios(category);
-      // Update dropdown button text with selected category
-      document.getElementById('selected-category').textContent = category;
-      document.getElementById('dropdown-menu').classList.remove('open');
-      document.getElementById('dropdown-toggle').classList.remove('open');
-      // Scroll category container to top
-      const categoryContainer = document.getElementById('category-container');
-      categoryContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+                // Render categories
+                data.categories.forEach((category, index) => {
+                    const categoryDiv = document.createElement('div');
+                    categoryDiv.className = `category ${index === 0 ? 'active' : ''}`;
+                    categoryDiv.id = category.category;
+                    categoryDiv.innerHTML = `<h2>${category.category}</h2>`;
 
-    function displayBios(category) {
-      const biosContainer = document.getElementById('bios-container');
-      biosContainer.innerHTML = ""; // Clear content
+                    category.bios.forEach(bio => {
+                        const bioCard = document.createElement('div');
+                        bioCard.className = 'bio-card';
+                        bioCard.innerHTML = `
+                            <p class="bio-text">${bio.bio}</p>
+                            <p><strong>Prompt:</strong> ${bio.prompt}</p>
+                            <p><strong>Caption:</strong> ${bio.caption}</p>
+                            <button class="copy-btn" onclick="copyToClipboard(\`${bio.bio}\`)">Copy Bio</button>
+                        `;
+                        categoryDiv.appendChild(bioCard);
+                    });
 
-      let biosToShow = [];
-      if (category === "All") {
-        biosData.forEach(cat => {
-          biosToShow = biosToShow.concat(cat.bios.map(bio => ({ ...bio, category: cat.category })));
-        });
-      } else {
-        const selectedCategory = biosData.find(cat => cat.category === category);
-        biosToShow = selectedCategory.bios.map(bio => ({ ...bio, category }));
-      }
+                    categoriesContainer.appendChild(categoryDiv);
+                });
 
-      biosToShow.forEach((bio, index) => {
-        const bioCard = document.createElement('div');
-        bioCard.classList.add('bio-card');
-        setTimeout(() => bioCard.classList.add('show'), index * 100);
+                // Category button click handler
+                document.querySelectorAll('.category-btn').forEach(button => {
+                    button.addEventListener('click', () => {
+                        document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+                        button.classList.add('active');
 
-        bioCard.innerHTML = `
-          <div class="bio-text" id="bio${index}">${bio.bio}</div>
-          <div class="caption">📄 Caption: ${bio.caption}</div>
-          <div class="prompt">🖼️ Prompt: ${bio.prompt}</div>
-          <button class="copy-btn" onclick="copyText('bio${index}')">Copy</button>
-        `;
-        biosContainer.appendChild(bioCard);
-      });
-    }
+                        document.querySelectorAll('.category').forEach(cat => cat.classList.remove('active'));
+                        document.getElementById(button.dataset.category).classList.add('active');
+                    });
+                });
+            })
+            .catch(error => console.error('Error loading JSON:', error));
 
-    function copyText(id) {
-      const text = document.getElementById(id).innerText;
-      navigator.clipboard.writeText(text).then(() => {
-        alert("Bio copied to clipboard!");
-      });
-    }
-
-    // Dropdown Toggle
-    document.querySelector('.dropdown-toggle').addEventListener('click', () => {
-      const dropdownMenu = document.getElementById('dropdown-menu');
-      const dropdownToggle = document.getElementById('dropdown-toggle');
-      dropdownMenu.classList.toggle('open');
-      dropdownToggle.classList.toggle('open');
-    });
-  </script>
+        // Copy to clipboard function
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const toast = document.getElementById('toast');
+                toast.style.display = 'block';
+                setTimeout(() => toast.style.display = 'none', 2000);
+            });
+        }
+    </script>
 </body>
 </html>
