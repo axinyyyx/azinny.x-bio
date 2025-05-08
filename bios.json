@@ -1,0 +1,180 @@
+{
+    "categories": [
+      {
+        "category": "Attitude",
+        "bios": [
+          {
+            "bio": "🖕 society | 🔒 private soul\n📍Earth, unfortunately\n💭 I don't follow rules. I rewrite them.",
+            "prompt": "A dark, moody street at night with neon signs, one figure standing alone in a hoodie.",
+            "caption": "Born to stand alone. Rules are for followers."
+          },
+          {
+            "bio": "not here to impress\n📍lost in my own world\n💀 built different",
+            "prompt": "A person staring through a rainy window, deep in thought, grayscale tone.",
+            "caption": "Not made to impress. Just made different."
+          },
+          {
+            "bio": "👑 Rishabh | azinny.x\n📍against the crowd\n🖕 fake vibes only get blocked",
+            "prompt": "Lone figure walking against a moving crowd, bold and confident.",
+            "caption": "I don’t fit in. I stand out."
+          },
+          {
+            "bio": "🧠 Overthinking. 💔 Trusting less. 🔥 Caring less.",
+            "prompt": "A person standing in a dark room, lost in deep thought.",
+            "caption": "The fewer people I trust, the less I care."
+          }
+        ]
+      },
+      {
+        "category": "Sad",
+        "bios": [
+          {
+            "bio": "💔 Heartbroken, but still standing\n📍Waiting for peace, not love\n⛓️ Trapped in my own thoughts",
+            "prompt": "A person sitting alone on a bench, with a somber expression.",
+            "caption": "A heart that's been broken, but never shattered."
+          },
+          {
+            "bio": "🖤 Emotions in turmoil\n📍Eyes filled with memories\n💭 Overthinking every moment",
+            "prompt": "A misty street at night with a figure looking down, holding their chest.",
+            "caption": "Not all scars are visible. Some are buried deep within."
+          },
+          {
+            "bio": "📍Living in my own sorrow\n💭 Mind numb, heart cold\n🖤 Dark thoughts, cold soul",
+            "prompt": "A lone figure walking through a foggy path, rain falling slowly.",
+            "caption": "Tears in my eyes, but none to show."
+          },
+          {
+            "bio": "💭 Searching for meaning in the void\n📍Lost in time\n🖤 No light, only shadows",
+            "prompt": "A shadowed room, a figure seated in contemplation.",
+            "caption": "Not broken, just lost in the void."
+          }
+        ]
+      },
+      {
+        "category": "Dark",
+        "bios": [
+          {
+            "bio": "🖤 Darkness is my comfort\n📍Too deep to decode\n💀 Cold soul, warm smile",
+            "prompt": "A person with an enigmatic smile, surrounded by darkness.",
+            "caption": "Comfort in the dark, warmth in my smile."
+          },
+          {
+            "bio": "🧠 Deep thoughts, dark truths\n📍Invisible in real life\n💀 Trust is a weapon",
+            "prompt": "A shadowy figure walking alone at night with deep, introspective thoughts.",
+            "caption": "What you see is never the whole truth."
+          },
+          {
+            "bio": "⛓️ Caught between dreams and nightmares\n📍Living in the abyss\n🖤 Alone in the darkness",
+            "prompt": "A lonely figure walking through a corridor with eerie shadows and glowing lights.",
+            "caption": "Between reality and nightmare, I walk alone."
+          },
+          {
+            "bio": "⚠️ Warning: I'm not what you expect\n📍Broken but resilient\n🖤 Dark soul, fiery spirit",
+            "prompt": "A person standing in front of a fire, staring into the distance.",
+            "caption": "Not everything broken is meant to be fixed."
+          }
+        ]
+      },
+      {
+        "category": "Motivational",
+        "bios": [
+          {
+            "bio": "💣 Break through the noise\n📍Against all odds\n💪 Nothing stops me",
+            "prompt": "A silhouette climbing a steep mountain, against a backdrop of a rising sun.",
+            "caption": "Rise above, even when the world tries to pull you down."
+          },
+          {
+            "bio": "🔥 Stay focused\n📍No distractions\n💯 Always moving forward",
+            "prompt": "A person sprinting through a rainy street, determination in their eyes.",
+            "caption": "Success is the result of relentless dedication."
+          },
+          {
+            "bio": "⚡ Lightning in my veins\n📍No retreat, no surrender\n💪 Be your own hero",
+            "prompt": "A figure standing under a lightning storm, fearless and powerful.",
+            "caption": "Don't wait for heroes. Be one."
+          },
+          {
+            "bio": "💥 The journey is the reward\n📍Never look back\n🔥 Keep pushing forward",
+            "prompt": "A person walking through the storm, but with determination in their eyes.",
+            "caption": "The only way is forward."
+          }
+        ]
+      },
+      {
+        "category": "Funny",
+        "bios": [
+          {
+            "bio": "🍕 I’m on a seafood diet.\n📍I see food and I eat it.",
+            "prompt": "A person sitting at a table, devouring a pizza slice.",
+            "caption": "Eating is my cardio."
+          },
+          {
+            "bio": "👑 Not a morning person\n📍Will take naps instead of coffee",
+            "prompt": "A person in pajamas, yawning while sitting on a couch.",
+            "caption": "Morning? What’s that?"
+          },
+          {
+            "bio": "🦄 I'm just a big kid in an adult body.\n📍Still trying to find my way around adulthood.",
+            "prompt": "A person holding a toy, smiling mischievously.",
+            "caption": "Adulthood? Can’t do it."
+          },
+          {
+            "bio": "😴 Can’t talk right now\n📍I'm busy sleeping.",
+            "prompt": "A person asleep at their desk, with coffee cups everywhere.",
+            "caption": "Sleep > Everything else."
+          }
+        ]
+      },
+      {
+        "category": "Love",
+        "bios": [
+          {
+            "bio": "💖 Love without expectations\n📍Hearts don't lie\n🌙 We are forever",
+            "prompt": "A couple sitting under the stars, hand in hand.",
+            "caption": "You + me = eternity."
+          },
+          {
+            "bio": "💘 Waiting for the one who will understand\n📍Love beyond words",
+            "prompt": "Two people sharing a quiet moment by a fire.",
+            "caption": "In silence, we speak the loudest."
+          },
+          {
+            "bio": "💌 Love isn't perfect, but it's worth it\n📍I choose love every day",
+            "prompt": "A hand holding a red rose against a sunset backdrop.",
+            "caption": "True love is never perfect, but it is always worth it."
+          },
+          {
+            "bio": "💖 Heart full of love, soul full of peace\n📍Together we shine",
+            "prompt": "A couple walking in sync, glowing under a full moon.",
+            "caption": "In your arms, I found home."
+          }
+        ]
+      },
+      {
+        "category": "Creative",
+        "bios": [
+          {
+            "bio": "🎨 Art is my therapy\n📍Living in colors\n🌈 My imagination knows no limits",
+            "prompt": "A person painting a vibrant mural on a brick wall.",
+            "caption": "When words fail, art speaks."
+          },
+          {
+            "bio": "🖋️ Writing is my escape\n📍Lost in stories\n📚 Reality can wait",
+            "prompt": "A figure sitting in a cozy corner, surrounded by books.",
+            "caption": "In words, I find my freedom."
+          },
+          {
+            "bio": "🎶 Music runs through my veins\n📍Beats are my heartbeat\n🎧 Life is a song",
+            "prompt": "A figure playing an instrument on a rooftop at sunset.",
+            "caption": "When life gets loud, music is the melody."
+          },
+          {
+            "bio": "📷 Capturing moments\n📍Memories in frames\n🌟 Stories frozen in time",
+            "prompt": "A photographer standing on a mountain, camera in hand, taking a shot.",
+            "caption": "Every picture tells a story."
+          }
+        ]
+      }
+    ]
+  }
+  
