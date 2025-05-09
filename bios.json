@@ -1,5 +1,40 @@
 {
     "categories": [
+        {
+        "category": "Dark",
+        "bios": [
+          {
+            "bio": "🖤 Darkness is my comfort\n📍Too deep to decode\n💀 Cold soul, warm smile",
+            "prompt": "A person with an enigmatic smile, surrounded by darkness.",
+            "caption": "Comfort in the dark, warmth in my smile."
+          },
+          {
+            "bio": "🌑 I thrive in shadows\n📍No one knows my truth\n🖤 Secrets are my armor",
+            "prompt": "A figure cloaked in shadows, standing under a moonlit sky.",
+            "caption": "The dark hides my scars, but not my strength."
+          },
+          {
+            "bio": "🖤 I’m the whisper in the void\n📍No light reaches me\n💀 Fearless in the abyss",
+            "prompt": "A figure standing at the edge of a dark cliff, stars above.",
+            "caption": "I don’t fear the dark; I am the dark."
+          },
+          {
+            "bio": "🧠 Deep thoughts, dark truths\n📍Invisible in real life\n💀 Trust is a weapon",
+            "prompt": "A shadowy figure walking alone at night with deep, introspective thoughts.",
+            "caption": "What you see is never the whole truth."
+          },
+          {
+            "bio": "⛓️ Caught between dreams and nightmares\n📍Living in the abyss\n🖤 Alone in the darkness",
+            "prompt": "A lonely figure walking through a corridor with eerie shadows and glowing lights.",
+            "caption": "Between reality and nightmare, I walk alone."
+          },
+          {
+            "bio": "⚠️ Warning: I'm not what you expect\n📍Broken but resilient\n🖤 Dark soul, fiery spirit",
+            "prompt": "A person standing in front of a fire, staring into the distance.",
+            "caption": "Not everything broken is meant to be fixed."
+          }
+        ]
+      },
       {
         "category": "Attitude",
         "bios": [
@@ -69,42 +104,7 @@
             "caption": "Not broken, just lost in the void."
           }
         ]
-      },
-      {
-        "category": "Dark",
-        "bios": [
-          {
-            "bio": "🖤 Darkness is my comfort\n📍Too deep to decode\n💀 Cold soul, warm smile",
-            "prompt": "A person with an enigmatic smile, surrounded by darkness.",
-            "caption": "Comfort in the dark, warmth in my smile."
-          },
-          {
-            "bio": "🌑 I thrive in shadows\n📍No one knows my truth\n🖤 Secrets are my armor",
-            "prompt": "A figure cloaked in shadows, standing under a moonlit sky.",
-            "caption": "The dark hides my scars, but not my strength."
-          },
-          {
-            "bio": "🖤 I’m the whisper in the void\n📍No light reaches me\n💀 Fearless in the abyss",
-            "prompt": "A figure standing at the edge of a dark cliff, stars above.",
-            "caption": "I don’t fear the dark; I am the dark."
-          },
-          {
-            "bio": "🧠 Deep thoughts, dark truths\n📍Invisible in real life\n💀 Trust is a weapon",
-            "prompt": "A shadowy figure walking alone at night with deep, introspective thoughts.",
-            "caption": "What you see is never the whole truth."
-          },
-          {
-            "bio": "⛓️ Caught between dreams and nightmares\n📍Living in the abyss\n🖤 Alone in the darkness",
-            "prompt": "A lonely figure walking through a corridor with eerie shadows and glowing lights.",
-            "caption": "Between reality and nightmare, I walk alone."
-          },
-          {
-            "bio": "⚠️ Warning: I'm not what you expect\n📍Broken but resilient\n🖤 Dark soul, fiery spirit",
-            "prompt": "A person standing in front of a fire, staring into the distance.",
-            "caption": "Not everything broken is meant to be fixed."
-          }
-        ]
-      },
+      }, 
       {
         "category": "Motivational",
         "bios": [
